@@ -62,6 +62,7 @@
                         <li><a runat="server" href="~/Product/list">Product List</a></li>
                         <li><a runat="server" href="~/Product/search">Product Search</a></li>
                         <li><a runat="server" href="~/Product/edit">Product Edit</a></li>
+                        <li><a runat="server" href="~/Transaction/">Transaction</a></li>
                     </ul>
                 </div>
             </div>

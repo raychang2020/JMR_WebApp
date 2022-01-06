@@ -105,35 +105,35 @@
         </ItemTemplate>
     </asp:FormView>
 
-    <asp:SqlDataSource ID="product_detail" runat="server" ConnectionString="<%$ ConnectionStrings:assignment4ConnectionString %>" DeleteCommand="DELETE FROM [product] WHERE [product_id] = @product_id" InsertCommand="INSERT INTO [product] ([product_id], [title], [category_id], [payment], [location], [country], [condition], [price], [created_data]) VALUES (@product_id, @title, @category_id, @payment, @location, @country, @condition, @price, @created_data)" SelectCommand="SELECT * FROM [product] WHERE ([product_id] = @product_id)" UpdateCommand="UPDATE [product] SET [title] = @title, [category_id] = @category_id, [payment] = @payment, [location] = @location, [country] = @country, [condition] = @condition, [price] = @price, [created_data] = @created_data WHERE [product_id] = @product_id">
-        <DeleteParameters>
-            <asp:Parameter Name="product_id" Type="Int32" />
-        </DeleteParameters>
-        <InsertParameters>
-            <asp:Parameter Name="product_id" Type="Int32" />
-            <asp:Parameter Name="title" Type="String" />
-            <asp:Parameter Name="category_id" Type="Int32" />
-            <asp:Parameter Name="payment" Type="String" />
-            <asp:Parameter Name="location" Type="String" />
-            <asp:Parameter Name="country" Type="String" />
-            <asp:Parameter Name="condition" Type="Double" />
-            <asp:Parameter Name="price" Type="Double" />
-            <asp:Parameter DbType="Date" Name="created_data" />
-        </InsertParameters>
-        <SelectParameters>
-            <asp:ControlParameter ControlID="DropDownList1" Name="product_id" PropertyName="SelectedValue" Type="Int32" />
-        </SelectParameters>
-        <UpdateParameters>
-            <asp:Parameter Name="title" Type="String" />
-            <asp:Parameter Name="category_id" Type="Int32" />
-            <asp:Parameter Name="payment" Type="String" />
-            <asp:Parameter Name="location" Type="String" />
-            <asp:Parameter Name="country" Type="String" />
-            <asp:Parameter Name="condition" Type="Double" />
-            <asp:Parameter Name="price" Type="Double" />
-            <asp:Parameter DbType="Date" Name="created_data" />
-            <asp:Parameter Name="product_id" Type="Int32" />
-        </UpdateParameters>
-    </asp:SqlDataSource>
+<asp:SqlDataSource ID="product_detail" runat="server" ConnectionString="<%$ ConnectionStrings:assignment4ConnectionString %>" DeleteCommand="DELETE FROM [product] WHERE [product_id] = @product_id" InsertCommand="INSERT INTO [product] ([product_id], [title], [category_id], [payment], [location], [country], [condition], [price], [created_data]) VALUES (@product_id, @title, @category_id, @payment, @location, @country, @condition, @price, @created_data)" SelectCommand="SELECT * FROM [product] WHERE ([product_id] = @product_id)" UpdateCommand="UPDATE [product] SET [title] = @title, [category_id] = @category_id, [payment] = @payment, [location] = @location, [country] = @country, [condition] = @condition, [price] = @price, [created_data] = @created_data WHERE [product_id] = @product_id">
+    <DeleteParameters>
+        <asp:Parameter Name="product_id" Type="Int32" />
+    </DeleteParameters>
+    <InsertParameters>
+        <asp:Parameter Name="product_id" Type="Int32" />
+        <asp:Parameter Name="title" Type="String" />
+        <asp:Parameter Name="category_id" Type="Int32" />
+        <asp:Parameter Name="payment" Type="String" />
+        <asp:Parameter Name="location" Type="String" />
+        <asp:Parameter Name="country" Type="String" />
+        <asp:Parameter Name="condition" Type="Double" />
+        <asp:Parameter Name="price" Type="Double" />
+        <asp:Parameter DbType="Date" Name="created_data" />
+    </InsertParameters>
+    <SelectParameters>
+        <asp:ControlParameter ControlID="DropDownList1" Name="product_id" PropertyName="SelectedValue" Type="Int32" />
+    </SelectParameters>
+    <UpdateParameters>
+        <asp:Parameter Name="title" Type="String" />
+        <asp:Parameter Name="category_id" Type="Int32" />
+        <asp:Parameter Name="payment" Type="String" />
+        <asp:Parameter Name="location" Type="String" />
+        <asp:Parameter Name="country" Type="String" />
+        <asp:Parameter Name="condition" Type="Double" />
+        <asp:Parameter Name="price" Type="Double" />
+        <asp:Parameter DbType="Date" Name="created_data" />
+        <asp:Parameter Name="product_id" Type="Int32" />
+    </UpdateParameters>
+</asp:SqlDataSource>
 
 </asp:Content>
